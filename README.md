@@ -53,6 +53,7 @@ Link Dataset:
 1. https://www.kaggle.com/datasets/farhan999/tokopedia-product-reviews?resource=download
 2. https://www.kaggle.com/datasets/satyaahb/ecommerce-ratings-and-reviews-in-bahasa-indonesia
 3. https://www.kaggle.com/datasets/satyaahb/e-commerce-sampled-reviews-in-bahasa-indonesia
+4. https://drive.google.com/drive/folders/1zpL6veYJJUyKfpK1mx2X0vD0gVXUZcpy?usp=sharing (data selama proses preprocessing dan training model)
 
 ### 🔄 Rating to Sentiment Mapping
 - **1–2** → negative  
