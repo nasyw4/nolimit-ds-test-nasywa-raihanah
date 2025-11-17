@@ -49,26 +49,32 @@ Dataset yang digunakan merupakan gabungan dari beberapa dataset review publik Ka
 | `rating`      | Rating 1–5 |
 | `sentiment`   | Label hasil mapping rating → sentiment |
 
+(Dataset tidak bisa di upload ke github karena size yang besar)
+Link Dataset:
+1. https://www.kaggle.com/datasets/farhan999/tokopedia-product-reviews?resource=download
+2. https://www.kaggle.com/datasets/satyaahb/ecommerce-ratings-and-reviews-in-bahasa-indonesia
+3. https://www.kaggle.com/datasets/satyaahb/e-commerce-sampled-reviews-in-bahasa-indonesia
+
 ### 🔄 Rating to Sentiment Mapping
 - **1–2** → negative  
 - **3** → neutral  
 - **4–5** → positive  
 
 Dataset sudah melalui proses:
-- standar kolom  
-- drop kolom tidak relevan  
-- cleaning  
-- remove duplicates  
-- remove missing values  
+- Standar kolom  
+- Drop kolom tidak relevan  
+- Cleaning  
+- Remove duplicates  
+- Remove missing values  
 
 ---
 
 ## 🔍 EDA Highlights
 EDA dilakukan untuk:
-- mengecek distribusi rating & sentiment  
-- menganalisis panjang review (karakter & kata)  
-- memvalidasi kualitas teks  
-- mendeteksi imbalance dataset  
+- Mengecek distribusi rating & sentiment  
+- Menganalisis panjang review (karakter & kata)  
+- Memvalidasi kualitas teks  
+- Mendeteksi imbalance dataset  
 
 Detail EDA terdapat pada notebook: `notebook/EDA & Preprocessing.ipynb`
 
@@ -76,11 +82,11 @@ Detail EDA terdapat pada notebook: `notebook/EDA & Preprocessing.ipynb`
 
 ## 🧹 Text Preprocessing
 Preprocessing minimal dilakukan untuk menjaga kualitas input bagi model Transformer:
-- remove URLs  
-- remove punctuation  
-- remove extra whitespace  
-- lowercase  
-- remove emoji  
+- Remove URLs  
+- Remove punctuation  
+- Remove extra whitespace  
+- Lowercase  
+- Remove emoji  
 
 Hasilnya disimpan di `data/processed/`.
 
@@ -105,9 +111,9 @@ Notebook: `notebooks/Train Test Split & Modeling.ipynb`
 
 ## 📈 Evaluation
 Hasil evaluasi meliputi:
-- classification report  
-- confusion matrix  
-- sample prediction  
+- Classification report  
+- Confusion matrix  
+- Sample prediction  
 (Setelah modeling selesai, bagian ini akan diperbarui)
 
 ---
@@ -117,6 +123,6 @@ Daftar dependency tersedia di: `requirements.txt`
 
 ## 📬 Contact
 Untuk pertanyaan lebih lanjut:  
-**NASYWA RAIHANAH*  
+**NASYWA RAIHANAH**  
 Email: *nasywaraihanah@gmail.com*
 
