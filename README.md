@@ -23,21 +23,100 @@ Selain itu, proyek ini dilengkapi dengan:
 
 ## 📁 Repository Structure
 
-nolimit-ds-test/
-├── data/
-│ ├── raw/ # Dataset mentah dari berbagai sumber
-│ ├── processed/ # Hasil preprocessing
-│ └── sample/ # Sample data kecil untuk verifikasi
-│
-├── notebooks/
-│ ├── EDA & Preprocessing.ipynb
-│ └── Modeling.ipynb
-│
-├── src/
-│ └── 
-│
-├── flowchart/
-│ └── pipeline.png # Flowchart pipeline end-to-end
-│
-├── requirements.txt
-└── README.md
+`nolimit-ds-test/`
+├── `data/`
+│   ├── `raw/`
+│   ├── `processed/`
+│   └── `sample/`
+├── `notebooks/`
+│   ├── `EDA & Preprocessing.ipynb`
+│   └── `Train Test Split & Modeling.ipynb`
+├── `src/`
+├── `flowchart/`
+│   └── `pipeline.png`
+├── `requirements.txt`
+└── `README.md`
+
+
+---
+
+## 📊 Dataset
+Dataset yang digunakan merupakan gabungan dari beberapa dataset review publik Kaggle (e-commerce & online services), yang memiliki:
+
+| Column        | Description |
+|---------------|-------------|
+| `review_text` | Teks ulasan customer |
+| `rating`      | Rating 1–5 |
+| `sentiment`   | Label hasil mapping rating → sentiment |
+
+### 🔄 Rating to Sentiment Mapping
+- **1–2** → negative  
+- **3** → neutral  
+- **4–5** → positive  
+
+Dataset sudah melalui proses:
+- standar kolom  
+- drop kolom tidak relevan  
+- cleaning  
+- remove duplicates  
+- remove missing values  
+
+---
+
+## 🔍 EDA Highlights
+EDA dilakukan untuk:
+- mengecek distribusi rating & sentiment  
+- menganalisis panjang review (karakter & kata)  
+- memvalidasi kualitas teks  
+- mendeteksi imbalance dataset  
+
+Detail EDA terdapat pada notebook: `notebook/EDA & Preprocessing.ipynb`
+
+---
+
+## 🧹 Text Preprocessing
+Preprocessing minimal dilakukan untuk menjaga kualitas input bagi model Transformer:
+- remove URLs  
+- remove punctuation  
+- remove extra whitespace  
+- lowercase  
+- remove emoji  
+
+Hasilnya disimpan di `data/processed/`.
+
+---
+
+## 🤖 Modeling
+Model yang digunakan:
+- **Hugging Face Transformer** (`AutoModelForSequenceClassification`)
+- Pretrained model:  
+  `w11wo/indonesian-roberta-base-sentiment-classifier` *(or XLM-R / mBERT)*
+
+Langkah-langkah modeling:
+1. Train-test split  
+2. Tokenization  
+3. Fine-tuning model  
+4. Evaluation (Accuracy, F1-score)  
+5. Save model  
+
+Notebook: `notebooks/Train Test Split & Modeling.ipynb`
+
+---
+
+## 📈 Evaluation
+Hasil evaluasi meliputi:
+- classification report  
+- confusion matrix  
+- sample prediction  
+(Setelah modeling selesai, bagian ini akan diperbarui)
+
+---
+
+## 🧪 Requirements
+Daftar dependency tersedia di: `requirements.txt`
+
+## 📬 Contact
+Untuk pertanyaan lebih lanjut:  
+**NASYWA RAIHANAH*  
+Email: *nasywaraihanah@gmail.com*
+
