@@ -30,7 +30,7 @@ Selain itu, proyek ini dilengkapi dengan:
 │   └── `sample/`
 ├── `notebooks/`
 │   ├── `EDA & Preprocessing.ipynb`
-│   └── `Train Test Split & Modeling.ipynb`
+│   └── `Train Test Split & Modeling & Evaluation.ipynb`
 ├── `src/`
 ├── `flowchart/`
 │   └── `pipeline.png`
@@ -105,7 +105,7 @@ Langkah-langkah modeling:
 4. Evaluation (Accuracy, F1-score)  
 5. Save model  
 
-Notebook: `notebooks/Train Test Split & Modeling.ipynb`
+Notebook: `notebooks/Train Test Split & Modeling & Evaluation.ipynb`
 
 ---
 
