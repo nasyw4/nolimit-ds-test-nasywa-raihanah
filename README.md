@@ -105,6 +105,7 @@ Langkah-langkah modeling:
 5. Save model  
 
 Notebook: `notebooks/Train Test Split & Modeling & Evaluation.ipynb`
+(Terdapat versi .py karena versi .ipynb terdapat error di previewnya)
 
 ---
 
