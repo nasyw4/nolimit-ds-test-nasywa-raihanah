@@ -17,7 +17,6 @@ Selain itu, proyek ini dilengkapi dengan:
 - EDA,
 - preprocessing,
 - model training & evaluation,
-- serta (opsional) mini app Streamlit.
 
 ---
 
