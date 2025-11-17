@@ -110,11 +110,10 @@ Notebook: `notebooks/Train Test Split & Modeling & Evaluation.ipynb`
 ---
 
 ## 📈 Evaluation
-Hasil evaluasi meliputi:
-- Classification report  
-- Confusion matrix  
-- Sample prediction  
-(Setelah modeling selesai, bagian ini akan diperbarui)
+Model dievaluasi menggunakan dataset test dengan hasil sebagai berikut:
+- Accuracy: 85.8%
+- F1-Score: 0.84
+- Eval Loss: 0.3975
 
 ---
 
